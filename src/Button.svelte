@@ -10,6 +10,7 @@
   export let fontSize = "text-sm";
   export let fontWeight = "font-medium";
   export let items = "items-center";
+  export let justifyContent = "justify-center";
   export let outline = "focus:outline-none";
   export let padding = "py-4 px-10";
   export let rounded = "rounded";
@@ -25,6 +26,7 @@
     fontSize,
     fontWeight,
     items,
+    justifyContent,
     outline,
     padding,
     rounded,
