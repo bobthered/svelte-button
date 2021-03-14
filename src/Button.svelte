@@ -13,6 +13,7 @@
   export let justifyContent = "justify-center";
   export let outline = "focus:outline-none";
   export let padding = "py-4 px-10";
+  export let ref;
   export let rounded = "rounded";
   export let textColor = "text-white hover:text-primary-500";
   export let textTransform = "uppercase";
@@ -39,7 +40,7 @@
 </script>
 
 {#if type === 'link'}
-  <a {href} class={clazz} on:click><slot /></a>
+  <a bind:this={ref} {href} class={clazz} on:click><slot /></a>
 {:else if type === 'submit'}
-  <button type="submit" class={clazz} on:click><slot /></button>
+  <button bind:this={ref} type="submit" class={clazz} on:click><slot /></button>
 {/if}

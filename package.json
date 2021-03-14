@@ -1,13 +1,14 @@
 {
   "name": "@bobthered/svelte-button",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Svelte component for buttons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "svelte": "src/index.js",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "publish": "git add . && git commit -m 'publish' && git push origin main && npm publish"
   },
   "repository": {
     "type": "git",
